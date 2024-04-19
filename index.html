@@ -60,5 +60,68 @@
 		</div><!--texto-destaque-->
 	</section><!--destaque-->
 
+	<section class="vitrine">
+		<div class="vitrine-flex">
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/suits.jpeg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/suits.jpeg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/suits.jpeg') ;"></div>
+			</div> 
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div> 																												
+		</div><!--vitrine-flex-->
+	</section><!--vitrine-->
+
+	<script src="jquery.js"></script>
+	<script src="slick.min.js"></script>
+
+	<script>
+		$('.vitrine-flex').slick({
+	dots: false,
+	arrows:false,
+  infinite: false,
+  centerMode: false,
+  speed:1000,
+  slidesToShow: 6,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover:false,
+        responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+  }]
+	});
+
+		$('.vitrine-wraper').hover(function(){
+			$(this).css('z-index','1000');
+		})
+
+		$('.vitrine-wraper').mouseout(function(){
+			$(this).css('z-index','0');
+		})
+	</script>
 </body>
 </html>
